@@ -1,0 +1,41 @@
+body{
+    color: white;
+    height: 100%;
+    background: #000000a8;
+    margin: 0 auto;
+    width: auto;
+}
+
+.container {
+    text-align: center;
+}
+
+header {
+    background: black;
+    padding: 2em 0;
+}
+
+form {
+    margin-top: 4em;
+}
+
+form ul{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+form ul li{
+    margin: 1em 0;
+}
+
+form ul li label{
+    display: inline-block;
+}
+.resultat{
+    color: #000;
+    background: white;
+    font-size: 26px;
+    padding: 2em;
+    margin-top: 0;
+}
+}

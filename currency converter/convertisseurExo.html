@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>PHP</title>
+    <link rel="stylesheet" href="convertisseurExo.css">
+</head>
+<body>
+<div class="container">
+    <?php include "header.php" ?>
+
+        <?php if($result == null): ?>
+            <form action="convertisseurExo.php" method="POST">
+                <ul>
+                    <li>
+                        <label for="montant">Entrer un montant :</label>
+                        <input type="text" id="montant" name="montant">
+                    </li>
+                    <li>
+                        <label for="sens">Indiquer le sens</label>
+                        <select id="sens" name="sens">
+                            <option value="eurosDollars">Euros -> Dollars </option>
+                            <option value="dollarsEuros">Dollars -> Euros </option>
+                        </select>
+                    </li>
+                    <li>
+                        <input type="submit" value="Resultat">
+                    </li>
+                </ul>
+            </form>
+        <?php else: ?>
+            <p class="resultat"><?= $result ?></p>
+        <?php endif; ?>
+  </div><!--endContainer-->
+</body>
+</html>
